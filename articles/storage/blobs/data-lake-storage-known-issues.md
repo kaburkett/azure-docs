@@ -17,6 +17,10 @@ This article describes limitations and known issues for accounts that have the h
 > [!NOTE]
 > Some of the features described in this article might not be supported in accounts that have Network File System (NFS) 3.0 support enabled. To view a table that shows the impact of feature support when various capabilities are enabled, see [Blob Storage feature support in Azure Storage accounts](storage-feature-support-in-storage-accounts.md).
 
+## Storage replication failover
+
+In case of disaster recovery scenario, failover is not supported as a method of recovery. For regular storage accounts, failover can be triggered manually to recover from hardware/network failure or natural disaster- but this feature does not exist for data lake gen2.
+
 ## Supported Blob storage features
 
 An increasing number of Blob storage features now work with accounts that have a hierarchical namespace. For a complete list, see [Blob Storage features available in Azure Data Lake Storage Gen2](./storage-feature-support-in-storage-accounts.md).
